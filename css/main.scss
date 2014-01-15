@@ -1,10 +1,6 @@
 
-//colors
-
 $light: rgba(255,255,255,1);
-$dark: rgba(0,0,0,1);
-
-$midnightblue: rgb(37,33,98) ;
+$midnightblue: rgb(37,33,98);
 $lightblue: #38e3f6;
 $yellow: #f4ec58;
 $green: #cadc6a;
@@ -12,8 +8,6 @@ $teal: #86bba0;
 $grey-purple: #8a91a6;
 $light-purple: #705087;
 $med-purple: #573769;
-
-
 
 @font-face {
     font-family: 'scurryfont';
@@ -30,131 +24,119 @@ body{
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
   margin: 0px;
   background: $green;
- 
 }
   
 * {-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-header{
-  text-align: center;
-}
-.logo{
-  vertical-align: top;
-  margin: 25px 25px 0 0;
-  display: inline-block!important;
-  position: relative;
 
+header{
+text-align: center;
+
+  .logo{
+    vertical-align: top;
+    margin: 25px 25px 0 0;
+    display: inline-block!important;
+    position: relative;
     display: block;
     width: 150px;
     height: 150px;
-   
-        border-radius: 500px;
-        background: $midnightblue;
-        border: 5px solid $light-purple;
-        content: "";
-text-align: center;
-&.globe{
-  padding: 35px 4px 0 0;
-}
-&.game{
-padding: 35px 0px 0 2px;
-}
-&.jam{
-padding: 25px 0px 0 4px;
-}
-}
+    border-radius: 500px;
+    background: $midnightblue;
+    border: 5px solid $light-purple;
+    content: "";
+    text-align: center;
+    &.globe{
+      padding: 35px 4px 0 0;
+    }
+    &.game{
+      padding: 35px 0px 0 2px;
+    }
+    &.jam{
+      padding: 25px 0px 0 4px;
+    }
+  }
 
-h1{
-  margin: 5px auto 0 auto;
-  font-family: "scurryfont", sans-serif;
-color: white;
-  font-size: 50px;
-  text-align: center;
-  padding: 0px;
-  letter-spacing: .1rem;
-}
+  h1{
+    margin: 5px auto 0 auto;
+    font-family: "scurryfont", sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
+    letter-spacing: .1rem;
+  }
 
+  h2{
+    margin: 5px auto 0 auto;
+    font-family: "scurryfont", sans-serif;
+    color: white;
+    font-size:30px;
+    text-align: center;
+    color: $midnightblue;
+  }
 
-h2{
-margin: 5px auto 0 auto;
-  font-family: "scurryfont", sans-serif;
-color: white;
-  font-size:30px;
-  text-align: center;
-  color: $midnightblue;
-
-}
-
-
+}//header
 
 .links{
   text-align: center;
   a{
-  text-decoration: none;
-}
+    text-decoration: none;
+  }
   div{
     display: inline-block;
     margin: 0 20px;
- 
-  padding: 8px 15px 6px 15px;
-  width: intrinsic;
-  background: $lightblue;
-  color: $light;
-  text-decoration: none;
-  font-family: "scurryfont";
-  font-size: 25px;
-  &.main{
-    padding: 18px 20px 16px 20px;
-    font-size: 35px;
-  }
-  position: relative;
-  -webkit-transition: all .2s ease-in-out;
--moz-transition: all .2s ease-in-out;
--ms-transition: all .2s ease-in-out;
--o-transition: all .2s ease-in-out; 
-transition: all .2s ease-in-out;
-border-bottom: 4px solid darken($lightblue, 20%);
+    padding: 8px 15px 6px 15px;
+    width: intrinsic;
+    background: $lightblue;
+    color: $light;
+    text-decoration: none;
+    font-family: "scurryfont";
+    font-size: 25px;
+    &.main{
+      padding: 18px 20px 16px 20px;
+      font-size: 35px;
+    }
+      position: relative;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out; 
+      transition: all .2s ease-in-out;
+      border-bottom: 4px solid darken($lightblue, 20%);
     &:hover{
-     
       background: darken($lightblue, 15%);
-border-bottom: 4px solid darken($lightblue, 35%);
+      border-bottom: 4px solid darken($lightblue, 35%);
     }
     &:active{
-     top: 4px;
+      top: 4px;
       background: darken($lightblue, 30%);
       border-bottom: 0px;
-
     }
   }
 }
-
 
 .page{
   width: 80%;
   padding: 5px 0 20px 0;
   margin: 30px auto 70px auto;
-   background: $midnightblue;
-        border: 5px solid $light-purple;
-color: $light;
- 
-   &:after{
+  background: $midnightblue;
+  border: 5px solid $light-purple;
+  color: $light;
+  &:after{
     clear: both;
     display: table;
     content:"";
-    }
-    .content{
-  padding: 15px;
-   
+  }
+  .content{
+    padding: 15px;
+  }
 }
-}
-
-
-
-
 
 .sponsors{
-  a{text-decoration: none;}
+  a{
+    text-decoration: none;
+  }
   h2{
     font-family: "scurryfont";
     color: $light;
@@ -165,76 +147,46 @@ color: $light;
   text-align: center;
   .sponsor{
     position: relative;
-     width: 30%;
+    width: 30%;
     display: inline-block;
-  
     .sponsor-inner{
-   background: $midnightblue;
-        border: 5px solid $light-purple;
-color: $light;
-margin: 10px;
-padding: 5px 15px;
-
- &:after{
-    clear: both;
-    display: table;
-    content:"";
+      background: $midnightblue;
+      border: 5px solid $light-purple;
+      color: $light;
+      margin: 10px;
+      padding: 5px 15px;
+      &:after{
+        clear: both;
+        display: table;
+        content:"";
+      }
+      .img{
+        width: 80px;
+        display: block;
+      }
+      .content{
+        text-align: center !important;
+        width: 100%;
+        display: block;
+        h3{
+        font-size: 1.2rem;
+        margin: 0 auto;
+        padding: 0 !important;
+        font-weight: 200;
+        }
+        h4{
+        font-size: 1rem;
+        margin: 0 auto;
+        }
+      }
     }
-    .img{
-     
-       width: 80px;
-    display: block;
-   
-  
-  
-    }
-
-    .content{
-
-  text-align: center !important;
-
-  width: 100%;
-  display: block;
-
-    h3{
-      font-size: 1.2rem;
-      margin: 0 auto;
-      padding: 0 !important;
-      font-weight: 200;
-    }
-    h4{
-      font-size: 1rem;
-      margin: 0 auto;
-
-    }
-  }
-  }
   }
   &:after{
     clear: both;
     display: table;
     content:"";
-    }
+  }
 }
 
 
 
-footer{
-  padding: 50px;
- 
-  background: $dark;
-   &:after{
-    clear: both;
-    display: table;
-    content:"";
-    }
-  .footer-inner{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px;
-  color: white;
-
-}
-
-}
