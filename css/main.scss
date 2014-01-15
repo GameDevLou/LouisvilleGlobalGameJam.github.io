@@ -71,9 +71,12 @@ text-align: center;
     margin: 5px auto 0 auto;
     font-family: "scurryfont", sans-serif;
     color: white;
-    font-size:30px;
+    font-size:24px;
     text-align: center;
     color: $midnightblue;
+    em{
+      font-size:30px;
+    }
   }
 
 }//header
