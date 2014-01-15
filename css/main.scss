@@ -129,6 +129,11 @@ text-align: center;
     content:"";
   }
   .content{
+    .fl{
+      float: left;
+      max-width: 200px;
+      margin: 0 10px 10px 0;
+    }
     padding: 15px;
   }
 }
