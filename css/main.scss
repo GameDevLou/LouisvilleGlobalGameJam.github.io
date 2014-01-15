@@ -4,6 +4,8 @@
 $light: rgba(255,255,255,1);
 $dark: rgba(0,0,0,1);
 
+$midnightblue: rgb(37,33,98) ;
+
 @font-face {
     font-family: 'scurryfont';
     src: url('../fonts/chinese_rocks_rg-webfont.eot');
@@ -18,6 +20,7 @@ $dark: rgba(0,0,0,1);
 body{
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
   margin: 0px;
+  background: $midnightblue;
  
 }
 
@@ -41,7 +44,7 @@ box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
 
 h1{
   font-family: "scurryfont", sans-serif;
-
+color: $midnightblue;
   font-size: 50px;
 }
 
