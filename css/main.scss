@@ -5,6 +5,15 @@ $light: rgba(255,255,255,1);
 $dark: rgba(0,0,0,1);
 
 $midnightblue: rgb(37,33,98) ;
+$lightblue: #38e3f6;
+$yellow: #f4ec58;
+$green: #cadc6a;
+$teal: #86bba0;
+$grey-purple: #8a91a6;
+$light-purple: #705087;
+$med-purple: #573769;
+
+
 
 @font-face {
     font-family: 'scurryfont';
@@ -20,148 +29,136 @@ $midnightblue: rgb(37,33,98) ;
 body{
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
   margin: 0px;
-  background: $midnightblue;
+  background: $green;
  
 }
-
+  
 * {-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+header{
+  text-align: center;
+}
+.logo{
+  vertical-align: top;
+  margin: 25px 25px 0 0;
+  display: inline-block!important;
+  position: relative;
+
+    display: block;
+    width: 150px;
+    height: 150px;
+   
+        border-radius: 500px;
+        background: $midnightblue;
+        border: 5px solid $light-purple;
+        content: "";
+text-align: center;
+&.globe{
+  padding: 35px 4px 0 0;
+}
+&.game{
+padding: 35px 0px 0 2px;
+}
+&.jam{
+padding: 25px 0px 0 4px;
+}
+}
+
+
+.links{
+  text-align: center;
+  a{
+  text-decoration: none;
+}
+  div{
+    display: inline-block;
+    margin: 0 20px;
+ 
+  padding: 8px 15px 6px 15px;
+  width: intrinsic;
+  background: $lightblue;
+  color: $light;
+  text-decoration: none;
+  font-family: "scurryfont";
+  font-size: 25px;
+  &.main{
+    padding: 18px 20px 16px 20px;
+    font-size: 35px;
+  }
+  position: relative;
+  -webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-ms-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out; 
+transition: all .2s ease-in-out;
+border-bottom: 4px solid darken($lightblue, 20%);
+    &:hover{
+     
+      background: darken($lightblue, 15%);
+border-bottom: 4px solid darken($lightblue, 35%);
+    }
+    &:active{
+     top: 4px;
+      background: darken($lightblue, 30%);
+      border-bottom: 0px;
+
+    }
+  }
+}
+
 
 .page{
   width: 80%;
   padding: 5px 0 20px 0;
   margin: 30px auto 70px auto;
-  background: $light;
-  -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
-box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+   background: $midnightblue;
+        border: 5px solid $light-purple;
+color: $light;
+ 
    &:after{
     clear: both;
     display: table;
     content:"";
     }
+    .content{
+  padding: 15px;
+   
 }
+}
+
 
 h1{
+  margin: 5px auto 0 auto;
   font-family: "scurryfont", sans-serif;
-color: $midnightblue;
+color: white;
   font-size: 50px;
-}
-
-header {
-  width: 742px;
-  margin: 0 auto;
-  position: relative;
-  .commitMessage{
-    font-family: "scurryfont", sans-serif;
-    position: absolute;
-    font-size: 24px;
-    top: 77px;
-    right: -124px;
-    max-width: 280px;
-    -webkit-animation: pulsate 2s ease-out;
-    -webkit-animation-iteration-count: infinite; 
-  }
-  img{
-    height: 280px;
-    margin: 0 auto !important;
-    display: block;
-  }
-}
-
-@-webkit-keyframes pulsate {
-  0% {
-    -webkit-transform: scale(0.8, 0.8) rotate(31deg);
-    -moz-transform: scale(0.8, 0.8) rotate(31deg);
-  }
-  50% {
-    -webkit-transform: scale(1.1, 1.1) rotate(31deg);
-    -moz-transform: scale(1.1, 1.1) rotate(31deg); 
-  }
-  100% {
-    -webkit-transform: scale(0.8, 0.8) rotate(31deg);
-    -moz-transform: scale(0.8, 0.8) rotate(31deg);
-  }
-}
-
-#trailer{
-  margin: 0 auto; 
-  width: 640px;
-  height: 360px;
-  display: block;
+  text-align: center;
 }
 
 
-.topBar{
-  background: $dark;
-  position: relative;
-  height: 60px;
-   &:after{
-    clear: both;
-    display: table;
-    content:"";
-    }
-}
-.secretLink{
-  padding: 10px;
-  color: $light;
-  position: relative;
-  top: 0px;
-  text-decoration: none;
-  i{font-size: 40px;
-    margin: 0  5px 0 0;}
-  // width: 50px;
-  // height: 50px;
-  display: block;
-
-  &.left{
-    float: left;
-  }
-  &.right{
-    float: right;
-  }
-  &:hover{
-  
-    background: darken($light, 80%);
- 
-  }
-}
-
-
-.videoPlayer{
-  padding: 20px;
-  background: $dark;
-  width: 100%;
-   &:after{
-    clear: both;
-    display: table;
-    content:"";
-    }
-
-}
-
-.news{
-  margin: 25px;
-  h1{
-    text-align: center;
-    
-  }
-}
 
 .sponsors{
-  width: 80%;
+  a{text-decoration: none;}
+  h2{
+    font-family: "scurryfont";
+    color: $light;
+    font-size: 1.8rem;
+  }
+  width: 90%;
   margin: 20px auto 60px auto;
   text-align: center;
   .sponsor{
     position: relative;
-     width: 420px;
+     width: 30%;
     display: inline-block;
   
     .sponsor-inner{
-   background: $dark;
+   background: $midnightblue;
+        border: 5px solid $light-purple;
 color: $light;
-margin: 20px;
-padding: 10px;
+margin: 10px;
+padding: 5px 15px;
 
  &:after{
     clear: both;
@@ -169,28 +166,29 @@ padding: 10px;
     content:"";
     }
     .img{
-      margin-left: 8%;
-       width: 20%;
-    display: inline-block;
-    float: left;
+     
+       width: 80px;
+    display: block;
+   
   
-    font-family: "scurryfont";
+  
     }
 
     .content{
 
-text-align: center !important;
-margin-left: 10%;
-       width: 60%;
-    display: inline-block;
-    float: left;
-    h1{
-      font-size: 2.2rem;
-      margin: 8px auto 0 auto!important;
-      padding: 0 !important;
-    }
-    h2{
+  text-align: center !important;
+
+  width: 100%;
+  display: block;
+
+    h3{
       font-size: 1.2rem;
+      margin: 0 auto;
+      padding: 0 !important;
+      font-weight: 200;
+    }
+    h4{
+      font-size: 1rem;
       margin: 0 auto;
 
     }
