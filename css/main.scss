@@ -61,21 +61,34 @@ text-align: center;
     margin: 5px auto 0 auto;
     font-family: "scurryfont", sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 4.9rem;
     text-align: center;
     padding: 0px;
     letter-spacing: .1rem;
   }
+  .infoBlock{
+    padding: 10px;
+margin: 20px 0;
+    background: rgba(0,0,0,.5);
+    h2{
+      width: 70%;
+      margin: 5px auto 0 auto;
+      font-weight: 200;
+      color: white;
+      font-size: 1.1rem;
+    text-align: left;
+      color: $light; 
+      em{
 
-  h2{
-    margin: 5px auto 0 auto;
-    font-family: "scurryfont", sans-serif;
-    color: white;
-    font-size:24px;
-    text-align: center;
-    color: $midnightblue;
-    em{
-      font-size:30px;
+        font-family: "scurryfont", sans-serif;
+        font-size:2.8rem;
+        width: 120px;
+        position: relative;
+        top: 10px;
+        margin: 0 10px 0 0;
+        display: inline-block;
+        text-align: right;
+      }
     }
   }
 
@@ -116,6 +129,10 @@ text-align: center;
       background: darken($lightblue, 30%);
       border-bottom: 0px;
     }
+  }
+  .sub{
+    background: $teal;
+    border-bottom: 4px solid darken($teal, 20%);
   }
 }
 
