@@ -219,14 +219,19 @@ margin: 20px 0;
 
 
 .sponsor{
+   margin: 25px auto;
+   width: intrinsic;
   h2{
     font-family: "scurryfont";
-    font-size: 24px;
+    font-size: 2.4rem;
+    color: rgba(0,0,0,.75);
+
   }
   a{
-    background $lightblue;
+    background: $lightblue;
     padding: 8px 12px;
     color: white;
+    text-decoration: none;
   }
 }
 
