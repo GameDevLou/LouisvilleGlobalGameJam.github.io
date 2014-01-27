@@ -25,11 +25,17 @@ body{
   margin: 0px;
   background: $green;
 }
+a{
+  color: white;
+}
   
 * {-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.centerinside{
+  text-align: center;
+}
 header{
 text-align: center;
 
@@ -68,7 +74,7 @@ text-align: center;
   }
   .infoBlock{
     padding: 10px;
-margin: 20px 0;
+    margin: 20px 0;
     background: rgba(0,0,0,.5);
     h2{
       width: 70%;
@@ -76,7 +82,7 @@ margin: 20px 0;
       font-weight: 200;
       color: white;
       font-size: 1.1rem;
-    text-align: left;
+      text-align: left;
       color: $light; 
       em{
 
@@ -98,6 +104,7 @@ margin: 20px 0;
   text-align: center;
   a{
     text-decoration: none;
+
   }
   div{
     display: inline-block;
@@ -109,6 +116,7 @@ margin: 20px 0;
     text-decoration: none;
     font-family: "scurryfont";
     font-size: 25px;
+    margin-bottom: 10px;
     &.main{
       padding: 18px 20px 16px 20px;
       font-size: 35px;
@@ -178,8 +186,8 @@ margin: 20px 0;
     width: 30%;
     display: inline-block;
     .sponsor-inner{
-      background: $midnightblue;
-      border: 5px solid $light-purple;
+      background: rgba(0,0,0,.2);
+   
       color: $light;
       margin: 10px;
       padding: 5px 15px;
@@ -189,7 +197,6 @@ margin: 20px 0;
         content:"";
       }
       .img{
-        width: 80px;
         display: block;
       }
       .content{
@@ -228,11 +235,82 @@ margin: 20px 0;
 
   }
   a{
-    background: $lightblue;
-    padding: 8px 12px;
-    color: white;
-    text-decoration: none;
+    
+ 
+  
+  }
+  img{
+    margin: 0 auto;
+    max-width: 170px;
+    width: 100%;
   }
 }
 
 
+
+.socialcovers{
+  img{
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  .links{
+    display: inline-block;
+    float: left;
+a{
+  display: block;
+   max-width: 300px;
+  background: $lightblue;
+  padding: 8px 12px;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+}
+}
+
+
+footer{
+  background: $med-purple;
+  color: white;
+  .footer-inner{
+    width: 80%;
+    text-align: center;
+padding: 40px 0;
+
+  }
+}
+
+.module{
+  img{
+    width: 100%;
+  }
+}
+/* Start Don't Overthink it Grids  */
+
+.grid{
+  
+}
+
+.grid:after{
+  clear: both;
+  display: table;
+  content:"";
+}
+
+[class*='col'] { 
+  display: inline-block; 
+  float: left; 
+  padding-left: 5px; 
+  padding-right: 5px;
+}
+
+.col1-1{ width: 100%; }
+.col1-2{ width: 50%; }
+.col1-3{ width: 33.333%; }
+.col2-3{ width: 66.666%; }
+.col1-4{ width: 25%; }
+.col1-5{ width: 20%; }
+.col1-6{ width: 16.6666666667%; }
+
+/* End Don't Overthink it Grids  */
